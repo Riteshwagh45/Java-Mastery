@@ -1,0 +1,332 @@
+=========================================================
+TOPIC : instanceof, Upcasting and Downcasting
+=========================================================
+
+1. instanceof
+---------------------------------------------------------
+
+Definition:
+instanceof is an operator used to check whether an object
+belongs to a particular class or interface.
+
+Syntax:
+
+object instanceof ClassName
+
+It always returns:
+
+true
+or
+false
+
+
+Example:
+
+class Vehicle {
+
+}
+
+class Car extends Vehicle {
+
+}
+
+Car car = new Car();
+
+System.out.println(car instanceof Car);       // true
+System.out.println(car instanceof Vehicle);   // true
+
+
+Explanation:
+
+Car IS-A Car
+
+Car IS-A Vehicle
+
+So both statements return true.
+
+
+Another Example:
+
+Vehicle vehicle = new Vehicle();
+
+System.out.println(vehicle instanceof Car);
+
+Output:
+
+false
+
+Reason:
+
+A Vehicle object is NOT a Car object.
+
+
+
+Why do we use instanceof?
+
+Before converting (casting) an object into another type,
+we first check whether it is actually of that type.
+
+This helps us avoid ClassCastException.
+
+
+=========================================================
+2. Upcasting
+=========================================================
+
+Definition:
+
+Upcasting means storing a child object inside a parent
+reference.
+
+Syntax:
+
+Parent reference = new Child();
+
+
+Example:
+
+Vehicle vehicle = new Car();
+
+This is called Upcasting.
+
+
+Memory Representation:
+
+Vehicle Reference
+        │
+        ▼
+
++--------------------------+
+| Vehicle Part             |
+|--------------------------|
+| brand                    |
+| model                    |
+|--------------------------|
+| Car Part                 |
+| fuelType                 |
+| doors                    |
++--------------------------+
+
+Notice:
+
+The object is still a Car.
+
+Only the reference type is Vehicle.
+
+
+Example:
+
+Vehicle vehicle = new Car();
+
+vehicle.start();      // Allowed
+
+vehicle.stop();       // Allowed
+
+vehicle.drive();      // Compile Time Error
+
+
+Why?
+
+Because the compiler checks the reference type.
+
+Reference Type = Vehicle
+
+Vehicle does not contain drive().
+
+Therefore Java gives an error.
+
+
+
+Important Interview Point:
+
+Reference Type decides
+
+→ Which methods are visible.
+
+Object Type decides
+
+→ Which overridden method executes.
+
+
+
+=========================================================
+3. Downcasting
+=========================================================
+
+Definition:
+
+Downcasting means converting a parent reference back into
+its child reference.
+
+Syntax:
+
+Child child = (Child) parent;
+
+
+Example:
+
+Vehicle vehicle = new Car();
+
+Car car = (Car) vehicle;
+
+car.drive();
+
+Output:
+
+Car Driving
+
+
+Now the compiler knows the reference is Car.
+
+So child-specific methods become available.
+
+
+
+=========================================================
+Unsafe Downcasting
+=========================================================
+
+Vehicle vehicle = new Vehicle();
+
+Car car = (Car) vehicle;
+
+Compilation:
+
+Successful
+
+Runtime:
+
+ClassCastException
+
+
+Reason:
+
+Vehicle object is NOT a Car object.
+
+Therefore Java throws an exception.
+
+
+
+=========================================================
+Safe Downcasting
+=========================================================
+
+Vehicle vehicle = new Car();
+
+if (vehicle instanceof Car) {
+
+    Car car = (Car) vehicle;
+
+    car.drive();
+
+}
+
+Using instanceof before downcasting prevents
+ClassCastException.
+
+
+
+=========================================================
+Complete Flow
+=========================================================
+
+Vehicle
+    ▲
+    │
+   Car
+
+
+Step 1
+
+Car car = new Car();
+
+Step 2 (Upcasting)
+
+Vehicle vehicle = car;
+
+Step 3 (Downcasting)
+
+Car c = (Car) vehicle;
+
+
+
+=========================================================
+Difference Between Upcasting and Downcasting
+=========================================================
+
+Upcasting
+
+• Child object stored in Parent reference
+• Automatic
+• Safe
+• No cast required
+
+Example:
+
+Vehicle v = new Car();
+
+
+Downcasting
+
+• Parent reference converted into Child reference
+• Manual
+• Cast operator required
+• Can throw ClassCastException
+
+Example:
+
+Car c = (Car) v;
+
+
+
+=========================================================
+Interview Questions
+=========================================================
+
+Q1. What is Upcasting?
+
+Storing a child object inside a parent reference.
+
+Example:
+
+Vehicle v = new Car();
+
+
+Q2. What is Downcasting?
+
+Converting a parent reference back to a child reference.
+
+Example:
+
+Car c = (Car) v;
+
+
+Q3. Is Upcasting automatic?
+
+Yes.
+
+
+Q4. Is Downcasting automatic?
+
+No.
+
+You must use the cast operator.
+
+
+Q5. Why do we use instanceof?
+
+To check an object's type before downcasting and avoid
+ClassCastException.
+
+
+=========================================================
+Important Rule (Must Remember)
+=========================================================
+
+Reference Type decides
+→ Which methods are visible.
+
+Object Type decides
+→ Which overridden method executes.
+
+This is the foundation of Runtime Polymorphism.
