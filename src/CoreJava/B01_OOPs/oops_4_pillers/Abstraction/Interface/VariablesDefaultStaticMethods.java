@@ -1,10 +1,10 @@
-package CoreJava.B01_OOPs.Interface;
+package CoreJava.B01_OOPs.oops_4_pillers.Abstraction.Interface;
 
 public class VariablesDefaultStaticMethods {
 
     interface Payment {
 
-        // CoreJava.CoreJava.B01_OOPs.Interface variable is automatically:
+        // CoreJava.CoreJava.B01_OOPs.oops_4_pillers.Abstraction.Interface variable is automatically:
         // public static final
         double LIMIT = 50000;
 
@@ -63,7 +63,7 @@ public class VariablesDefaultStaticMethods {
 
         System.out.println("----------------------");
 
-        // CoreJava.CoreJava.B01_OOPs.Interface reference with implementing class object
+        // CoreJava.CoreJava.B01_OOPs.oops_4_pillers.Abstraction.Interface reference with implementing class object
         Payment obj2 = new UpiPayment();
 
         // Allowed because pay() exists in Payment

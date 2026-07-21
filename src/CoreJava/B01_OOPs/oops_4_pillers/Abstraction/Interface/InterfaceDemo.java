@@ -1,4 +1,4 @@
-package CoreJava.B01_OOPs.Interface;
+package CoreJava.B01_OOPs.oops_4_pillers.Abstraction.Interface;
 
 interface Test{
     abstract void f1();
