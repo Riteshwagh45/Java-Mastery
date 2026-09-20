@@ -1,214 +1,792 @@
-☕ Java-Mastery
+# ☕ Java-Mastery
 
-A structured Java learning repository covering Core Java, OOP, Collections Framework, Java 8+, Advanced Java, Spring, Spring Boot, Hibernate, and backend development.
+> A structured Java learning repository covering Core Java, Object-Oriented Programming, Collections Framework, Java 8+, Advanced Java, JDBC, Spring, Spring Boot, Hibernate, Security, Microservices, and Backend Development.
 
-👨‍💻 About This Repository
+---
 
-This repository contains my complete Java development learning journey.
+## 👨‍💻 About This Repository
 
-Instead of only studying theory, I learn each concept by writing Java programs and implementing practical examples.
+**Java-Mastery** is my complete Java development learning journey.
 
-The Goal: Build strong Java fundamentals and gradually progress toward professional Java Backend Development.
+Instead of learning Java only through theory, I practice every concept by writing programs, building practical examples, implementing CRUD operations, and gradually developing real-world backend applications.
 
-🗺️ Learning Path
+The repository follows a structured path from **Core Java fundamentals to professional Java Backend Development**.
 
-Core Java ➔ Advanced Java ➔ Spring ➔ Spring Boot ➔ Hibernate/JPA ➔ Spring Security ➔ Microservices ➔ Docker ➔ AWS ➔ CI/CD
+### 🎯 Learning Path
 
+**Core Java → OOP → Collections → Java 8+ → Advanced Java → JDBC → Spring → Spring Boot → Hibernate/JPA → Spring Security → Microservices → Docker → AWS → CI/CD**
 
-📚 Curriculum & Topics Covered
+---
 
-Java Fundamentals: Variables, Data Types, Type Casting, Operators, Control Statements, Conditional Statements, Loops, Arrays, Strings, Methods, Packages, Access Modifiers.
+# 📚 Topics Covered
 
-Object-Oriented Programming (OOP): Classes & Objects, Constructors, Static Members, Inheritance, Polymorphism, Method Overloading, Method Overriding, Abstraction, Interfaces, Encapsulation, Wrapper Classes.
+## ☕ Core Java
 
-Exception Handling: Exception Basics, try-catch, finally, throw, throws, Custom Exceptions, Checked & Unchecked Exceptions.
+### Java Fundamentals
 
-List: ArrayList (CRUD, Employee Management System), LinkedList, Vector (Student Result System), Stack.
+- Variables
+- Data Types
+- Type Casting
+- Operators
+- Conditional Statements
+- Control Statements
+- Loops
+- Arrays
+- Strings
+- Methods
+- Packages
+- Access Modifiers
 
-Set: HashSet (Union, Intersection), LinkedHashSet (Insertion Order), TreeSet (Sorting & Range Operations).
+### Object-Oriented Programming
 
-Map: HashMap (Book Management CRUD), Hashtable (Student Marks CRUD), LinkedHashMap (Account Management CRUD), TreeMap (Product Management CRUD).
+- Classes & Objects
+- Constructors
+- Static Members
+- Inheritance
+- Polymorphism
+- Method Overloading
+- Method Overriding
+- Abstraction
+- Interfaces
+- Encapsulation
+- Wrapper Classes
 
-Comparable & Comparator: compareTo(), compare(), Natural Ordering, Custom Sorting Strategies across multiple fields.
+### Exception Handling
 
-Generics: Generic Classes, Methods, Interfaces, Type Safety, Wildcards, Bounded Types.
+- Exception Basics
+- try-catch
+- finally
+- throw
+- throws
+- Checked Exceptions
+- Unchecked Exceptions
+- Custom Exceptions
+- Exception Hierarchy
 
-Functional Programming: Lambda Expressions, Functional Interfaces, Built-in Interfaces (Predicate, Consumer, Supplier, Function), Method References.
+---
 
-Stream API & Optional: Data Processing, Filtering, Mapping, Reduction, Optional Handling.
+# 📦 Collections Framework
 
-File Handling & Serialization: FileReader, FileWriter, BufferedReader, BufferedWriter, Serializable, transient Keyword.
+## 📋 List
 
-Multithreading: Thread Lifecycle, Runnable, Synchronization, Inter-thread Communication, Executor Framework.
+### ArrayList
 
-Networking: Sockets, Client-Server Communication, TCP/UDP.
+- CRUD Operations
+- Employee Management System
+- Search Element
+- Remove Element
+- Merge Two Lists
+- Contains Check
+- Iteration
+- Practice Programs
 
-JDBC: Architecture, Drivers, PreparedStatement, CallableStatement, ResultSet, Transactions, Batch Processing, MySQL Integration.
+### LinkedList
 
-Spring Framework: IoC, Dependency Injection, Bean Lifecycle, Component Scanning, ApplicationContext, Annotations.
+- CRUD Operations
+- Adding Elements
+- Removing Elements
+- Searching
+- Traversal
+- List Manipulation
 
-Spring Boot & JPA: REST APIs, DTOs, Controllers, Services, Repositories, Global Exception Handling, Spring Data JPA, Hibernate Mapping (1-to-1, 1-to-Many, Many-to-Many), JPQL.
+### Vector
 
-Spring Security: Authentication, Authorization, Password Encoding, Role-Based Access Control, JWT Security.
+- CRUD Operations
+- Student Result System
+- Search Element
+- Even Numbers
+- Remove Duplicates
 
-Microservices: Service Discovery, API Gateway, OpenFeign, Config Server, Distributed Systems.
+### Stack
 
-DevOps: Docker Containers, Docker Compose, AWS (EC2, RDS), GitHub Actions CI/CD.
+- CRUD Operations
+- Push
+- Pop
+- Peek
+- Search
+- Stack Traversal
 
-💻 Practical CRUD Projects
+---
 
-✅ Completed Projects
+## 🔹 Set
 
-Employee Management System — Using ArrayList
+### HashSet
 
-Student Result System — Using Hashtable
+- Store Elements
+- Unique Elements
+- Union
+- Intersection
+- Duplicate Handling
 
-Book Management System — Using HashMap
+### LinkedHashSet
 
-Account Management System — Using LinkedHashMap
+- Store Elements
+- Maintain Insertion Order
+- Frequency Count
+- Store Student Names
 
-Product Management System — Using TreeMap
+### TreeSet
 
-⏳ Upcoming Projects
+- Store Elements
+- Sorted Elements
+- Ascending Order
+- Descending Order
+- Range Operations
 
-JDBC CRUD Application
+---
 
-Spring Boot REST API
+## 🗂️ Map
 
-Spring Boot + MySQL Application
+### HashMap
 
-Spring Boot + JPA/Hibernate Integration
+- Basic Operations
+- Key-Value Management
+- Searching
+- Updating Values
+- Removing Entries
+- Book Management CRUD
 
-Spring Security + JWT Authentication
+### Hashtable
 
-Full-stack Microservices Project
+- Key-Value Operations
+- Student Marks CRUD
+- Searching
+- Updating
+- Removing
 
-📂 Repository Structure
+### LinkedHashMap
+
+- Key-Value Management
+- Maintain Insertion Order
+- Account Management CRUD
+
+### TreeMap
+
+- Sorted Key-Value Pairs
+- Product Management CRUD
+- Ascending Order
+- Descending Order
+- Range Operations
+
+---
+
+# 🔄 Comparable & Comparator
+
+## Comparable
+
+- Comparable Interface
+- compareTo()
+- Natural Ordering
+- Sorting Custom Objects
+- Object Comparison
+
+## Comparator
+
+- Comparator Interface
+- compare()
+- Custom Sorting
+- Multiple Sorting Strategies
+- Sorting Objects by Different Fields
+- Ascending & Descending Sorting
+
+---
+
+# 🧩 Generics
+
+- Introduction to Generics
+- Generic Classes
+- Generic Methods
+- Generic Interfaces
+- Type Safety
+- Generic Collections
+- Wildcards
+- Upper Bounded Types
+- Lower Bounded Types
+
+---
+
+# ☕ Java 8+
+
+## Functional Interfaces
+
+- Functional Interfaces
+- Built-in Functional Interfaces
+- Predicate
+- Consumer
+- Supplier
+- Function
+
+## Lambda Expressions
+
+- Lambda Syntax
+- Lambda with Functional Interfaces
+- Lambda with Collections
+- Lambda with Streams
+
+## Method References
+
+- Static Method Reference
+- Instance Method Reference
+- Constructor Reference
+
+## Stream API
+
+- Stream Creation
+- filter()
+- map()
+- sorted()
+- distinct()
+- limit()
+- skip()
+- forEach()
+- collect()
+- reduce()
+- count()
+- min()
+- max()
+- Optional with Streams
+
+---
+
+# 📁 Advanced Java
+
+## File Handling
+
+- File Class
+- FileReader
+- FileWriter
+- BufferedReader
+- BufferedWriter
+- Reading Files
+- Writing Files
+- File Operations
+
+## Serialization
+
+- Serialization
+- Deserialization
+- Serializable Interface
+- transient Keyword
+- Object Streams
+
+## Multithreading
+
+- Thread Basics
+- Creating Threads
+- Thread Class
+- Runnable Interface
+- Thread Lifecycle
+- Thread Methods
+- Thread Priority
+- Synchronization
+- Inter-Thread Communication
+- Executor Framework
+- Callable & Future
+
+## Networking
+
+- Networking Basics
+- Socket Programming
+- Client-Server Communication
+- TCP
+- UDP
+- Network Programming
+
+---
+
+# 🗄️ JDBC
+
+## JDBC Fundamentals
+
+- JDBC Introduction
+- JDBC Architecture
+- JDBC Drivers
+- Database Connection
+- Connection Object
+- Statement
+- PreparedStatement
+- CallableStatement
+- ResultSet
+
+## JDBC CRUD
+
+- Create
+- Read
+- Update
+- Delete
+- Search
+- Transactions
+- Batch Processing
+
+## Database Integration
+
+- MySQL Integration
+- Database Connectivity
+- SQL Queries from Java
+- Prepared Statements
+- Transaction Management
+
+---
+
+# 🌱 Spring Framework
+
+## Spring Core
+
+- Spring Introduction
+- IoC
+- Dependency Injection
+- Spring Beans
+- Bean Lifecycle
+- ApplicationContext
+- Component Scanning
+- Configuration
+- Annotations
+- @Component
+- @Service
+- @Repository
+- @Controller
+- @Autowired
+
+---
+
+# 🚀 Spring Boot
+
+## Spring Boot Fundamentals
+
+- Spring Boot Introduction
+- Project Structure
+- Spring Boot Starters
+- Maven
+- application.properties
+- application.yml
+- Configuration
+- Profiles
+
+## REST API Development
+
+- REST Architecture
+- HTTP Methods
+- GET
+- POST
+- PUT
+- DELETE
+- REST Controllers
+- Request Parameters
+- Path Variables
+- Request Body
+- ResponseEntity
+- HTTP Status Codes
+
+## Application Architecture
+
+- Controller Layer
+- Service Layer
+- Repository Layer
+- DTOs
+- Entity Classes
+- Layered Architecture
+
+## Validation & Exception Handling
+
+- Bean Validation
+- @Valid
+- Validation Annotations
+- Custom Validation
+- Global Exception Handling
+- @ControllerAdvice
+- @ExceptionHandler
+- Custom Exceptions
+
+---
+
+# 🗃️ Hibernate & JPA
+
+- JPA Introduction
+- Hibernate Introduction
+- Entities
+- Entity Mapping
+- Primary Keys
+- Relationships
+- One-to-One
+- One-to-Many
+- Many-to-One
+- Many-to-Many
+- JPQL
+- JPA Repository
+- Pagination
+- Sorting
+- Transactions
+- Lazy Loading
+- Eager Loading
+
+---
+
+# 🔐 Spring Security
+
+- Spring Security Fundamentals
+- Authentication
+- Authorization
+- Password Encoding
+- UserDetails
+- UserDetailsService
+- Security Filters
+- Roles & Authorities
+- Role-Based Authorization
+- JWT Authentication
+- JWT Authorization
+- Securing REST APIs
+
+---
+
+# 🏗️ Backend Development
+
+This section focuses on applying Java and Spring Boot concepts to real-world backend applications.
+
+### Topics
+
+- REST API Development
+- Layered Architecture
+- DTO Pattern
+- Entity Relationships
+- Database Integration
+- Validation
+- Global Exception Handling
+- Pagination
+- Sorting
+- Searching
+- Authentication
+- Authorization
+- Logging
+- API Documentation
+- Configuration Management
+- Environment Variables
+- Clean Code
+- Application Architecture
+
+---
+
+# 🌐 Microservices
+
+## Microservices Fundamentals
+
+- Monolithic Architecture
+- Microservices Architecture
+- Advantages & Challenges
+- Service-to-Service Communication
+- REST Communication
+
+## Spring Cloud
+
+- API Gateway
+- Service Discovery
+- Eureka
+- Configuration Server
+- OpenFeign
+- Load Balancing
+- Resilience
+- Distributed Systems Basics
+
+---
+
+# 🐳 Docker, AWS & CI/CD
+
+## Docker
+
+- Docker Fundamentals
+- Docker Images
+- Docker Containers
+- Dockerfile
+- Docker Compose
+- Containerized Applications
+
+## AWS
+
+- AWS Fundamentals
+- EC2
+- RDS
+- S3
+- Application Deployment
+- Environment Configuration
+
+## CI/CD
+
+- CI/CD Fundamentals
+- GitHub Actions
+- Automated Builds
+- Automated Testing
+- Application Deployment
+
+---
+
+# 💻 Practical CRUD Projects
+
+## 🟢 Current Projects
+
+| Project | Technology |
+|---|---|
+| Employee CRUD | ArrayList |
+| Student CRUD | Hashtable |
+| Book Management System | HashMap |
+| Account Management System | LinkedHashMap |
+| Product Management System | TreeMap |
+
+## 🔵 Future Projects
+
+| Project | Technology |
+|---|---|
+| JDBC CRUD Application | Java + JDBC + MySQL |
+| REST API | Spring Boot |
+| Employee Management System | Spring Boot + MySQL |
+| Student Management System | Spring Boot + JPA |
+| Authentication System | Spring Security + JWT |
+| E-Commerce Backend | Spring Boot + JPA + Security |
+| Microservices Application | Spring Cloud |
+| Containerized Application | Docker |
+| Cloud Deployment | AWS |
+| Automated Deployment | CI/CD |
+
+---
+
+# 📝 Notes
+
+The `Notes` directory contains:
+
+- Java study notes
+- Concept explanations
+- Important interview concepts
+- Practical references
+- Learning materials
+- Revision notes
+
+---
+
+# 📂 Repository Structure
 
 Java-Mastery/
-│
-├── Notes/                             # Study materials & documentation
-│
+
+├── Notes/
+
 └── src/
+
     └── CoreJava/
+
         ├── A01_JavaBasics/
+
         ├── A02_Operators/
+
         ├── A03_ControlStatements/
+
         ├── A04_IterativeControlStatements/
+
         │
+
         ├── B01_OOPs/
+
         │   ├── AccessModifiers/
+
         │   ├── ClassesAndObjects/
+
         │   ├── Constructor/
+
         │   ├── StaticMembers/
+
         │   ├── WrapperClasses/
+
         │   └── oops_4_pillers/
+
         │
+
         ├── D01_collectionFramework/
+
         │   ├── List/
+
         │   ├── Map/
+
         │   ├── Set/
+
         │   └── wrapperclasses/
+
         │
+
         ├── D02_Comparable/
+
         ├── D03_Comparator/
+
         │
+
         └── F01_Java8/
+
             ├── BuiltInFunctionalInterfaces/
+
             ├── FunctionalInterfaces/
+
             ├── LambdaExpressions/
+
             ├── MethodReferences/
+
             └── StreamAPI/
 
+---
 
-📊 Current Progress
+# 📊 Learning Progress
 
-Topic
+| Topic | Status |
+|---|:---:|
+| Java Fundamentals | ✅ Completed |
+| Operators | ✅ Completed |
+| Control Statements | ✅ Completed |
+| Loops | ✅ Completed |
+| Object-Oriented Programming | ✅ Completed |
+| Wrapper Classes | ✅ Completed |
+| Collections Framework | ✅ Completed |
+| Comparable | ✅ Completed |
+| Comparator | ✅ Completed |
+| Java 8 | ✅ Completed |
+| Generics | 🔄 In Progress |
+| Exception Handling | 🔄 Revision |
+| File Handling | ⏳ Upcoming |
+| Serialization | ⏳ Upcoming |
+| Multithreading | ⏳ Upcoming |
+| Networking | ⏳ Upcoming |
+| JDBC | ⏳ Upcoming |
+| Spring Framework | ⏳ Upcoming |
+| Spring Boot | ⏳ Upcoming |
+| Hibernate / JPA | ⏳ Upcoming |
+| Spring Security / JWT | ⏳ Upcoming |
+| Microservices | ⏳ Upcoming |
+| Docker | ⏳ Upcoming |
+| AWS | ⏳ Upcoming |
+| CI/CD | ⏳ Upcoming |
 
-Status
+---
 
-Java Fundamentals
+# 🎯 Repository Goals
 
-✅ Completed
+The main goals of this repository are:
 
-Operators & Control Statements
+- Build strong Core Java fundamentals
+- Understand Object-Oriented Programming deeply
+- Master the Java Collections Framework
+- Learn modern Java features
+- Understand important Java concepts
+- Learn Advanced Java
+- Work with files and serialization
+- Understand multithreading
+- Learn JDBC and database connectivity
+- Learn Spring Framework
+- Master Spring Boot
+- Build production-style REST APIs
+- Learn Hibernate and JPA
+- Implement authentication and authorization
+- Learn Spring Security and JWT
+- Understand Microservices Architecture
+- Learn Docker and containerization
+- Deploy applications using AWS
+- Understand CI/CD
+- Build real-world backend projects
+- Prepare for Java Backend Developer opportunities
 
-✅ Completed
+---
 
-OOP & Wrapper Classes
+# 🚫 DSA Is Maintained Separately
 
-✅ Completed
+Data Structures and Algorithms are intentionally **not included in this repository**.
 
-Collections Framework
+DSA practice, patterns, algorithms, and LeetCode problems are maintained in a separate repository.
 
-✅ Completed
+This repository focuses specifically on:
 
-Comparable & Comparator
+> **Java Development → Backend Development → Spring Boot → Microservices**
 
-✅ Completed
+Keeping DSA separate allows this repository to remain focused and organized around the Java Backend Development ecosystem.
 
-Java 8+ Features
+---
 
-✅ Completed
+# 🛠️ Technologies & Tools
 
-Generics
+### Programming
 
-🔄 In Progress
+- Java
+- SQL
 
-Exception Handling
+### Backend
 
-🔄 In Progress
+- JDBC
+- Spring Framework
+- Spring Boot
+- Hibernate
+- JPA
+- Spring Data JPA
+- Spring Security
+- JWT
 
-File Handling & Multithreading
+### Database
 
-⏳ Upcoming
+- MySQL
 
-JDBC
+### Build Tools
 
-⏳ Upcoming
+- Maven
 
-Spring Framework & Spring Boot
+### Development Tools
 
-⏳ Upcoming
+- IntelliJ IDEA
+- Git
+- GitHub
 
-Hibernate / JPA
+### DevOps & Cloud
 
-⏳ Upcoming
+- Docker
+- AWS
+- CI/CD
+- GitHub Actions
 
-Spring Security / JWT
+---
 
-⏳ Upcoming
+# 📖 Learning Philosophy
 
-Microservices & DevOps
+My learning approach is:
 
-⏳ Upcoming
+**Learn → Understand → Implement → Practice → Build → Document → Commit**
 
-🎯 Repository Goals
+I focus on writing code for every important concept rather than only reading theoretical explanations.
 
-Build strong Core Java fundamentals.
+Each stage of this repository is designed to build upon the previous one and gradually move toward real-world Java backend development.
 
-Understand Java concepts through practical coding rather than just theory.
+---
 
-Master modern Java features (Java 8+) and object-oriented architecture.
+# 🔄 Continuous Learning
 
-Build production-ready REST APIs using Spring Boot and Hibernate.
+This repository is continuously updated as I learn new concepts.
 
-Secure applications using Spring Security and JWT.
+New topics, programs, notes, and projects will be added regularly as I progress through the Java Backend Development roadmap.
 
-Prepare thoroughly for Java Backend Developer roles.
+---
 
-ℹ️ Note: Data Structures and Algorithms (DSA) practice is maintained in a separate repository to keep this focused solely on Java Development & Backend Engineering.
+# ⭐ Connect With Me
 
-🛠️ Technologies & Tools
+### GitHub
 
-📖 Learning Philosophy
+**Ritesh Wagh**
 
-$$\text{Learn} \longrightarrow \text{Implement} \longrightarrow \text{Practice} \longrightarrow \text{Build} \longrightarrow \text{Document} \longrightarrow \text{Commit}$$
+🔗 https://github.com/Riteshwagh45
 
-⭐ Connect With Me
+### LinkedIn
 
-GitHub: Riteshwagh45
+**Ritesh Wagh**
 
-LinkedIn: Ritesh Wagh
+🔗 https://www.linkedin.com/in/ritesh-wagh-0b0302277
 
-If you find this repository helpful, don't forget to give it a ⭐!
+---
+
+# ⭐ Support
+
+If you find this repository useful or interesting, consider giving it a ⭐ **Star**.
+
+It motivates me to keep learning, building, and improving.
+
+---
+
+<p align="center">
+  ☕ <b>Learning Java. Building Backend. Becoming a Better Developer.</b>
+</p>
